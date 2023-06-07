@@ -4,9 +4,15 @@ import java.util.HashMap;
 import java.util.Map;
 public class charCount {
     static void countChars(String inputString){
+
         HashMap<Character, Integer> charCountMap = new HashMap<Character, Integer>();
-        char[] stringArray = inputString.toCharArray();
+        char[] stringArray = inputString.toUpperCase().toCharArray();
         for (char c: stringArray){
+            //if letter is not alphabetic, continue
+            if (!Character.isAlphabetic(c)) {
+                continue;
+            }
+
             if (charCountMap.containsKey(c)){
                 charCountMap.put(c, charCountMap.get(c)+1);
             } else{
