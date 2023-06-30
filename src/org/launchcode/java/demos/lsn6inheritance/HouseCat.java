@@ -21,4 +21,10 @@ public class HouseCat extends Cat {
     public String purr() {
         return "I'm a HouseCat";
     }
+
+//    public static void main(String[] args){
+//        HouseCat garfield = new HouseCat("Garfield", 12);
+//        garfield.eat();
+//        System.out.println(garfield.isTired());   // prints true
+//    }
 }
